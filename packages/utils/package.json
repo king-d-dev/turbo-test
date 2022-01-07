@@ -1,0 +1,19 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "source": "./src/index.ts",
+  "files": [
+    "build/**"
+  ],
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "rm -rf build && tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}

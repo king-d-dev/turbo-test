@@ -1,0 +1,24 @@
+{
+  "name": "db",
+  "version": "1.0.0",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "source": "./src/index.ts",
+  "files": [
+    "build/**"
+  ],
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "rm -rf build && tsc",
+    "clean": "rm -rf .turbo && rm -rf build"
+  },
+  "devDependencies": {
+    "prisma": "^3.7.0",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.7.0"
+  }
+}

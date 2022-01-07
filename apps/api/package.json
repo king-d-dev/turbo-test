@@ -1,0 +1,22 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "build/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "prisma migrate deploy && rm -rf build && tsc",
+    "start": "node build/index.js",
+    "dev": "ts-node-dev -r dotenv/config -r tsconfig-paths/register --respawn --rs --exit-child src/index.ts"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "db": "*"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.8",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.12.0"
+  }
+}
